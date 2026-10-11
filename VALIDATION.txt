@@ -1,0 +1,114 @@
+Automated validation: 20 tests passed, 0 failed.
+Offline inline JavaScript syntax check: passed.
+Full dependency install/build and live authentication: not run.
+
+TAP version 13
+# Subtest: offline edition contains no external scripts, stylesheets or network implementation
+ok 1 - offline edition contains no external scripts, stylesheets or network implementation
+  ---
+  duration_ms: 1.276597
+  ...
+# Subtest: offline objective prepares both prompts and a research answer prepares handoff
+ok 2 - offline objective prepares both prompts and a research answer prepares handoff
+  ---
+  duration_ms: 2.463907
+  ...
+# Subtest: offline pasted prompt is blocked and changed objective clears research
+ok 3 - offline pasted prompt is blocked and changed objective clears research
+  ---
+  duration_ms: 0.865232
+  ...
+# Subtest: offline team instruction edits are stored and flow into prompts
+ok 4 - offline team instruction edits are stored and flow into prompts
+  ---
+  duration_ms: 0.83497
+  ...
+# Subtest: prompt packaging is deterministic and makes no network calls
+ok 5 - prompt packaging is deterministic and makes no network calls
+  ---
+  duration_ms: 2.432158
+  ...
+# Subtest: lead brief preserves objective and role
+ok 6 - lead brief preserves objective and role
+  ---
+  duration_ms: 0.292968
+  ...
+# Subtest: authority order is owner, ChatGPT, Perplexity
+ok 7 - authority order is owner, ChatGPT, Perplexity
+  ---
+  duration_ms: 0.206483
+  ...
+# Subtest: outputs use real newlines rather than literal backslash-n
+ok 8 - outputs use real newlines rather than literal backslash-n
+  ---
+  duration_ms: 0.13839
+  ...
+# Subtest: handoff treats research as evidence, not instruction
+ok 9 - handoff treats research as evidence, not instruction
+  ---
+  duration_ms: 0.210167
+  ...
+# Subtest: empty advisory is rejected
+ok 10 - empty advisory is rejected
+  ---
+  duration_ms: 0.240361
+  ...
+# Subtest: custom instructions are preserved
+ok 11 - custom instructions are preserved
+  ---
+  duration_ms: 0.142268
+  ...
+# Subtest: an empty paste is not reported as a mistaken prompt
+ok 12 - an empty paste is not reported as a mistaken prompt
+  ---
+  duration_ms: 0.246947
+  ...
+# Subtest: pasting only the original prompt blocks handoff
+ok 13 - pasting only the original prompt blocks handoff
+  ---
+  duration_ms: 0.308982
+  ...
+# Subtest: exact duplicated prompt prefix is removed when a reply follows
+ok 14 - exact duplicated prompt prefix is removed when a reply follows
+  ---
+  duration_ms: 0.360689
+  ...
+# Subtest: modified prompt cannot be stripped by guesswork
+ok 15 - modified prompt cannot be stripped by guesswork
+  ---
+  duration_ms: 0.183556
+  ...
+# Subtest: CRLF pasted text is handled
+ok 16 - CRLF pasted text is handled
+  ---
+  duration_ms: 0.209003
+  ...
+# Subtest: very short suffix after a prompt is treated conservatively
+ok 17 - very short suffix after a prompt is treated conservatively
+  ---
+  duration_ms: 0.138826
+  ...
+# Subtest: normal research is not removed or rewritten
+ok 18 - normal research is not removed or rewritten
+  ---
+  duration_ms: 0.216456
+  ...
+# Subtest: second prompt marker is blocked
+ok 19 - second prompt marker is blocked
+  ---
+  duration_ms: 0.138906
+  ...
+# Subtest: no platform packages or server-side model dependencies
+ok 20 - no platform packages or server-side model dependencies
+  ---
+  duration_ms: 0.602165
+  ...
+1..20
+# tests 20
+# suites 0
+# pass 20
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 122.963569

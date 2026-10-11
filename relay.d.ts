@@ -1,0 +1,11 @@
+export type TeamInstructions = { lead: string; advisor: string };
+export const HIERARCHY: string;
+export const DEFAULT_LEAD_INSTRUCTIONS: string;
+export const DEFAULT_ADVISOR_INSTRUCTIONS: string;
+export const LS_LEAD: string;
+export const LS_ADVISOR: string;
+export const ADVISORY_MARKER: string;
+export function buildLeadBrief(objective: string, team: TeamInstructions): string;
+export function buildAdvisorPrompt(objective: string, team: TeamInstructions): string;
+export function buildFinalHandoff(objective: string, advisory: string, team: TeamInstructions): string;
+export function inspectAdvisory(raw: string, generatedPrompt: string): { text: string; warning: string; blocked: boolean; stripped: boolean };
